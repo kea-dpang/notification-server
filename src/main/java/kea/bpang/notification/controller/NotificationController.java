@@ -19,7 +19,7 @@ public class NotificationController {
 
     private final EmailService emailService;
 
-    @Operation(summary = "관리자에게 이메일 전송", description = "특정 상황이 발생했을 때 관리자에게 정보를 전달하고자 할 때 사용합니다.")
+    @Operation(summary = "이메일 전송", description = "특정 상황이 발생했을 때 정보를 전달하고자 할 때 사용합니다.")
     @PostMapping("/email")
     public ResponseEntity<String> sendEmailNotification(@RequestBody EmailNotificationDto dto) {
         try {
