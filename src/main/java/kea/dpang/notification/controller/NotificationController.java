@@ -1,11 +1,11 @@
-package kea.bpang.notification.controller;
+package kea.dpang.notification.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
-import kea.bpang.notification.base.BaseResponse;
-import kea.bpang.notification.dto.EmailNotificationDto;
-import kea.bpang.notification.dto.SlackNotificationDto;
-import kea.bpang.notification.service.EmailService;
-import kea.bpang.notification.service.SlackService;
+import kea.dpang.notification.base.BaseResponse;
+import kea.dpang.notification.dto.EmailNotificationDto;
+import kea.dpang.notification.dto.SlackNotificationDto;
+import kea.dpang.notification.service.EmailService;
+import kea.dpang.notification.service.SlackService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

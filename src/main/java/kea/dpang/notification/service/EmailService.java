@@ -1,6 +1,6 @@
-package kea.bpang.notification.service;
+package kea.dpang.notification.service;
 
-import kea.bpang.notification.dto.EmailNotificationDto;
+import kea.dpang.notification.dto.EmailNotificationDto;
 
 public interface EmailService {
 

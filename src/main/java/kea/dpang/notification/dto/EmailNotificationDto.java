@@ -1,4 +1,4 @@
-package kea.bpang.notification.dto;
+package kea.dpang.notification.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

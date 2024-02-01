@@ -1,6 +1,6 @@
-package kea.bpang.notification.service;
+package kea.dpang.notification.service;
 
-import kea.bpang.notification.dto.EmailNotificationDto;
+import kea.dpang.notification.dto.EmailNotificationDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.MailException;

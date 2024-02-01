@@ -1,4 +1,4 @@
-package kea.bpang.notification.dto;
+package kea.dpang.notification.dto;
 
 import lombok.Data;
 

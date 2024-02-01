@@ -1,4 +1,4 @@
-package kea.bpang.notification;
+package kea.dpang.notification;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

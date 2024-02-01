@@ -1,4 +1,4 @@
-package kea.bpang.notification.config;
+package kea.dpang.notification.config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;

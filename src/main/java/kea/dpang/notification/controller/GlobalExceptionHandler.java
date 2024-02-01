@@ -1,6 +1,6 @@
-package kea.bpang.notification.controller;
+package kea.dpang.notification.controller;
 
-import kea.bpang.notification.base.ErrorResponse;
+import kea.dpang.notification.base.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.MailException;

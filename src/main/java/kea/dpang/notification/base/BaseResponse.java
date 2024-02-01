@@ -1,4 +1,4 @@
-package kea.bpang.notification.base;
+package kea.dpang.notification.base;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

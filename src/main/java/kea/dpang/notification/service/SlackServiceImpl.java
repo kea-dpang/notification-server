@@ -1,4 +1,4 @@
-package kea.bpang.notification.service;
+package kea.dpang.notification.service;
 
 import com.slack.api.Slack;
 import lombok.extern.slf4j.Slf4j;
