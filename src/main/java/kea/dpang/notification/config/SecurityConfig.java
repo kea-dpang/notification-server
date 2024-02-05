@@ -40,7 +40,8 @@ public class SecurityConfig {
                 .logout(AbstractHttpConfigurer::disable) // 로그아웃 기능 비활성화.
                 .authorizeHttpRequests(
                         request -> request
-                                .anyRequest().permitAll() // 모든 요청이 인증을 필요로 하도록 설정
+                                .requestMatchers("/api/notifications/**").permitAll() // /api/notifications/** 경로는 인증없이 접근 가능하도록 설정
+                                .anyRequest().authenticated() // 모든 요청이 인증을 필요로 하도록 설정
                 )
                 .build();
     }
