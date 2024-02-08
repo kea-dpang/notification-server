@@ -41,7 +41,7 @@ public class NotificationController {
     @PostMapping("/slack")
     public ResponseEntity<BaseResponse> sendSlackNotification(
             @RequestHeader("X-DPANG-CLIENT-ROLE") @P("role") String role,
-            SlackNotificationDto dto
+            @RequestBody SlackNotificationDto dto
     ) {
         slackService.sendMessage(dto.getMessage());
         log.info("Slack 알림이 성공적으로 보내졌습니다.");
