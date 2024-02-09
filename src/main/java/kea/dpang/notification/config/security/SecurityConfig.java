@@ -1,4 +1,4 @@
-package kea.dpang.notification.config;
+package kea.dpang.notification.config.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,11 +10,14 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
 public class SecurityConfig {
+
+    DpangServiceNameHeaderFilter dpangServiceNameHeaderFilter = new DpangServiceNameHeaderFilter();
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
@@ -43,6 +46,7 @@ public class SecurityConfig {
                                 .requestMatchers("/api/notifications/**").permitAll() // /api/notifications/** 경로는 인증없이 접근 가능하도록 설정
                                 .anyRequest().authenticated() // 모든 요청이 인증을 필요로 하도록 설정
                 )
+                .addFilterBefore(dpangServiceNameHeaderFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
 }
